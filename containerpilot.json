@@ -7,7 +7,7 @@
     {
       "name": "redis",
       "port": 6379,
-      "health": [ "sh -c 'redis-cli PING | grep PONG'" ],
+      "health": ["/usr/local/bin/redis-cli", "PING"],
       "poll": 5,
       "ttl": 25
     }
