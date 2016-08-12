@@ -1,0 +1,15 @@
+{
+  "logging": {
+    "level": "WARN"
+  },
+  "consul": "{{ .CONSUL }}:8500",
+  "services": [
+    {
+      "name": "redis",
+      "port": 6379,
+      "health": [ "sh -c 'redis-cli PING | grep PONG'" ],
+      "poll": 5,
+      "ttl": 25
+    }
+  ]
+}
