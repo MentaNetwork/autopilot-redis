@@ -2,8 +2,8 @@ FROM redis:alpine
 MAINTAINER Menta Network <dev@mentanetwork.com>
 
 ENV CONTAINERPILOT=file:///etc/containerpilot.json \
-    CONTAINERPILOT_VERSION=2.3.0 \
-    CONTAINERPILOT_SHA1=ec9dbedaca9f4a7a50762f50768cbc42879c7208
+    CONTAINERPILOT_VERSION=2.4.1 \
+    CONTAINERPILOT_SHA1=198d96c8d7bfafb1ab6df96653c29701510b833c
 
 COPY containerpilot.json /etc/
 
