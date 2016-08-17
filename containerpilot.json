@@ -5,7 +5,7 @@
   "consul": "{{ .CONSUL }}:8500",
   "services": [
     {
-      "name": "redis",
+      "name": "cache",
       "port": 6379,
       "health": ["/usr/local/bin/redis-cli", "PING"],
       "poll": 5,
